@@ -1,6 +1,8 @@
+
 public class FindDates {
     public static void main(String[] Args){
-        System.out.println(checkDateForPalindrome("20100102"));
+        DateCustom date_1 = new DateCustom(1);
+        System.out.println(checkDateForPalindrome(date_1.toString()));
     }
     public static Boolean checkDateForPalindrome(String date){
         String reverseDate = reverseString(date);
