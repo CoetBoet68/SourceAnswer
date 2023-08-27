@@ -5,7 +5,7 @@ public class FindDates {
     }
     public static void printBonusDatesBetween(int fromYear, int toYear){
         DateCustom date_1 = new DateCustom(fromYear);
-        while(date_1.getYear() < toYear){
+        while(date_1.getYear() <= toYear){
             if(checkDateForPalindrome(date_1.toPalindromeString())){
                 System.out.println(date_1);
             }
